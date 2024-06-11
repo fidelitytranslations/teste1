@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            position: relative;
+            width: 500px; /* Largura da imagem */
+            height: 707px; /* Altura da imagem */
+            margin: 0 auto;
+        }
+
+        .container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .button-container {
+            position: absolute;
+            bottom: 190px; /* Posição vertical abaixo do meio */
+            left: 35%; /* Posição horizontal no meio */
+            transform: translateX(-50%); /* Centraliza horizontalmente */
+            text-align: center; /* Alinha os botões no centro */
+            display: flex; /* Alterado para exibir os botões lado a lado */
+            justify-content: center; /* Centraliza os botões horizontalmente */
+        }
+
+        button {
+            --color: #ad0b0b;
+            font-family: inherit;
+            display: inline-block;
+            width: 8em;
+            height: 2.6em;
+            line-height: 2.5em;
+            margin: 0 5px; /* Espaçamento entre os botões */
+            overflow: hidden;
+            border: 2px solid var(--color);
+            transition: color .5s;
+            z-index: 1;
+            font-size: 17px;
+            border-radius: 6px;
+            font-weight: 500;
+            color: var(--color);
+        }
+
+        button:hover {
+            color: #fff;
+        }
+
+        .social-media-icons {
+            position: absolute;
+            bottom: 143px; /* Posição vertical abaixo do botão "Ligar" */
+            left:19%; /* Posição horizontal mais para a esquerda */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .social-media-icons img {
+            margin: 0 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png">
+        <img src="img3.png" style=" position: relative; right: 500px; top: -745px;">
+        <img src="img4.png" style="position: relative; right: -500px; top: -1415px;">
+
+        <div class="button-container">
+            <a href="tel:1121664444" style="position: relative; top: -10px; right: -3px;"><button>Ligar</button></a>
+            <a href="mailto:sp@fidelity.com.br" style="position: relative;top: -10px;right: 3px;"><button>Enviar e-mail</button></a>
+        </div>
+        
+        <a href="https://api.whatsapp.com/send?phone=5511971330230"><button style="position: relative; top: -1983px; right: -102px;">WhatsApp</button></a>
+        <a href="https://br.linkedin.com/company/fidelity-translations-ltda"><button style="position: relative; top: -1920px; right: 120px;">Linkedin</button></a>
+        <a href="https://www.fidelity.com.br/orcamento/"><button style="position: relative; top: -1860px; right: 130px;">Orçamento</button></a>
+        <a href="https://www.fidelity.com.br/"><button style="position: relative; top: -1905px; right: -31px;">Site</button></a>
+        <a href="https://www.instagram.com/fidelitytranslationsbrasil/?next=%2F"><button style="position: relative; top: -1965px; right: -20px;">Instagram</button></a>
+
+    </div>
+</body>
+</html>
